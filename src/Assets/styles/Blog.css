@@ -1,0 +1,86 @@
+.breadcrumb .breadcrumb-title{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+.breadcrumb .breadcrumb-title p{
+    color: #fff;
+}
+.breadcrumb .breadcrumb-title{
+    padding: 100px 0px;
+}
+.breadcrumb .breadcrumb-title h1{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(0,133,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    color: #fff;
+    font-size: 100px;
+}
+.breadcrumb .breadcrumb-title-outline h1 {
+    -webkit-text-stroke: 1px #ffffff33; 
+    color: transparent; 
+    background-color: transparent;
+    font-size: 200px;
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+.blog-section{
+    margin-bottom: 100px;
+}
+
+.blog-section .blog-item {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #027EF0;
+    background: rgb(8,9,11);
+    background: linear-gradient(144deg, rgba(8,9,11,1) 35%, rgba(7,30,51,1) 85%, rgba(7,43,79,1) 90%, rgba(4,66,122,1) 100%);    
+}
+.blog-section .blog-item .blog-image{
+    width: 100%;
+    height: 270px;
+}
+.blog-section .blog-item .blog-image img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale();
+}
+.blog-section .blog-item .blog-content .date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #027EF0;
+    background-color: #ffffff44;
+    width: 150px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.blog-section .blog-item .blog-content .date h6{
+    margin-bottom: 0px;
+    color: #fff;
+    padding: 10px;
+}
+.blog-section .blog-item .blog-content .blog-title h1{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.blog-section .blog-item .blog-content .read-more h6{
+    color: #81c2ff;
+    text-decoration: underline;
+}
+.blog-section .sec-title h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #fff;
+}
