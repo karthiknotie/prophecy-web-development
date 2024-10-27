@@ -43,9 +43,14 @@
     background: rgb(8,9,11);
     background: linear-gradient(144deg, rgba(8,9,11,1) 35%, rgba(7,30,51,1) 85%, rgba(7,43,79,1) 90%, rgba(4,66,122,1) 100%);    
 }
+.blog-section .blog-detail .blog-image{
+    height: 500px !important;
+    position: relative;
+}
 .blog-section .blog-item .blog-image{
     width: 100%;
     height: 270px;
+    position: relative;
 }
 .blog-section .blog-item .blog-image img{
     border-radius: 20px;
@@ -54,33 +59,112 @@
     height: 100%;
     filter: grayscale();
 }
-.blog-section .blog-item .blog-content .date{
+.blog-section .blog-item .blog-image .date{
+    position: absolute;
+    right: 2%;
+    top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #027EF0;
-    background-color: #ffffff44;
+    background-color: #2c2c2cd1;
     width: 150px;
+    height: 50px;
     border-radius: 50px;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
-.blog-section .blog-item .blog-content .date h6{
+.blog-section .arrow-shape-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #027EF0;
+    background-color: #2c2c2cd1;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+} 
+.blog-section .arrow-shape-right img{
+    transform: rotate(180deg);
+}
+.blog-section .blog-detail .blog-image .arrow-shape{
+    position: absolute;
+    left: 2%;
+    top:3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #027EF0;
+    background-color: #2c2c2cd1;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+}
+.blog-section .blog-detail .blog-image .arrow-shape img{
+    color: #fff;
+    max-width: 60%;
+    object-fit: contain;
+}
+.blog-section .blog-item .blog-image .date h6{
     margin-bottom: 0px;
     color: #fff;
     padding: 10px;
 }
-.blog-section .blog-item .blog-content .blog-title h1{
+.blog-section .blog-detail .blog-content .blog-title h1{
+    font-family: 'Inter', sans-serif;
     color: #fff;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 35px !important;
+    font-weight: 400 ;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.blog-section .blog-item .blog-content .blog-title h1{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400 ;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.blog-section .blog-item .blog-content .blog-title p{
+    color: #bfbfbf;
 }
 .blog-section .blog-item .blog-content .read-more h6{
     color: #81c2ff;
     text-decoration: underline;
 }
 .blog-section .sec-title h1{
+    font-family: 'Inter', sans-serif;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin: 50px 0px 30px 0px;
     color: #fff;
+    font-weight: 600;
+}
+.blog-section .blog-detail .share button{
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #027EF0;
+    color: #fff;
+}
+.blog-section .blog-detail .blog-content .blog-title h1{
+    margin: 0px;
+}
+.blog-section .blog-detail .blog-content .blog-title{
+    margin-top:40px;
+}
+
+/* blog overview page styles */
+.blog-overview-page{
+    padding: 100px 0px;
+}
+.blog-overview-page .blog-title{
+    margin-top: 30px;
+}
+
+.blog-overview-page .share{
+    justify-content: end
+}
+.blog-overview-page .blog-overview-content p{
+    color: #fff;
+    font-size: 18px;
 }

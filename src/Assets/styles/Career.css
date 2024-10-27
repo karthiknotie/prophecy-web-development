@@ -1,0 +1,90 @@
+.career-section{
+    padding: 100px 0px;
+}
+.career-section .career-accordian{
+    display: flex;
+    justify-content: end;
+}
+.career-section .career-accordian .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20x;
+    background: rgb(2,126,240);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 50%,rgba(2,126,240,1) 100%);
+    border: 2px solid #027EF0;
+    border-radius: 50px;
+    margin-right: 20px;
+    height: 50px;
+    width: 180px;
+}
+.career-section .job-notices{
+    margin-top: 50px;
+}
+.career-section .career-accordian .item h6{
+    color: #000;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-family: 'Graphik Trial', sans-serif;
+}
+.career-section .box-content{
+    border-radius: 20px;
+    border: 1px solid #027EF0;
+    background: rgb(0,91,175);
+    background: linear-gradient(125deg, rgba(0,91,175,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,91,175,1) 100%);
+    height: 250px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.career-section .box-content .title{
+    display: flex;
+    justify-content: space-between;
+}
+.career-section .box-content .title h1{
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.career-section .box-content .title h6{
+    font-size: 13px;
+    color: #fff;
+    border: 2px solid #027EF0;
+    border-radius: 20px;
+    padding: 8px;
+}
+.career-section .box-content .title .icon{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 5px;
+}
+.career-section .box-content h6{
+    color: #b7b7b7;
+}
+.career-section .box-content p{
+    color: #ffff;
+}
+.career-section .box-content .role-salary{
+    display: flex;
+}
+.career-section .box-content .salary{
+    margin-left: 30px;
+}
+.career-section .box-content .role-salary .icon{
+    margin-right: 10px;
+}
+.career-section .box-content .role-salary h6{
+    display: flex;
+    align-items: center;
+}
+.career-section .box-content .apply-btn button{
+    background: rgb(2,126,240);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 50%,rgba(2,126,240,1) 100%);
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}

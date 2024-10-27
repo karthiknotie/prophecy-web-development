@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer-content{
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
     background-image: url("../Resources//service-page-cta-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
     border-radius: 30px;
 }
 .footer-content .logo img{
-    width: 270px;
+    width: 220px;
 }
 .footer-content .social-media .icon{
     margin-right: 10px;
@@ -19,6 +19,7 @@
     width: 30px;
     border-radius: 50%;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .footer-content .social-media{
     margin-top: 80px;
@@ -52,4 +53,12 @@
     font-family: 'Gilroy-Regular', sans-serif;
     color: #000;
     font-weight: 600;
+}
+.footer-bottom .copyright{
+    margin-top: 100px;
+}
+.footer-bottom .copyright h6{
+    border-top: 1px solid #bebebe;
+    padding: 20px 0px;
+    text-align: center;
 }

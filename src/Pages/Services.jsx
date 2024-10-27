@@ -10,7 +10,6 @@ import KeyBenefitsImg4 from "../Assets/Resources/adobe-benefits-img-4.png"
 import KeyBenefitsImg5 from "../Assets/Resources/adobe-benefits-img-5.png"
 import BenefitsIcon1 from "../Assets/Resources/benefits-icon-1.png"
 import Logo from "../Assets/Resources/banner-logo.svg";
-import CheckedShape from "../Assets/Resources/who-we-are-checkedbox.png"
 
 const Services = () => {
     return (

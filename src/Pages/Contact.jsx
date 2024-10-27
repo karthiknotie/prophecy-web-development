@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoCall } from "react-icons/io5";
 import "../Assets/styles/Contact.css"
 import BreadCrumbShape1 from "../Assets/Resources/contact-breadcrumb.png"
 import BreadCrumbShape2 from "../Assets/Resources/contact-breadcrumb-light.png"

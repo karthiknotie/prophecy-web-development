@@ -25,7 +25,6 @@ import ApproachImage from "../Assets/Resources/approach-image1.jpg"
 import TechnologiesIcon1 from "../Assets/Resources/technologies-icon1.svg"
 import WhoWeAreChecked from "../Assets/Resources/who-we-are-checkedbox.png"
 import CtaChecked from "../Assets/Resources/cta-checkedbox.png"
-import FooterLogo from "../Assets/Resources/footer-logo.svg"
 
 const Home = () => {
 
