@@ -45,7 +45,7 @@ const Footer = () => {
                                             <a href="/">Home</a>
                                         </li>
                                         <li>
-                                            <a href="/"></a>About
+                                            <a href="/">About</a>
                                         </li>
                                         <li>
                                             <a href="/">Our Team</a>
@@ -151,8 +151,8 @@ const Footer = () => {
                                 <div className="footer-menu-3 menu-items">
                                     <h1>Support</h1>
                                     <ul>
-                                        <li><a href="javascript:void(0);">Private Policy</a></li>
-                                        <li><a href="javascript:void(0);">Cookies Policy</a></li>
+                                        <li><a href="/">Private Policy</a></li>
+                                        <li><a href="/">Cookies Policy</a></li>
                                     </ul>
                                 </div>
                             </div>
