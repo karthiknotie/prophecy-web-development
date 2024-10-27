@@ -151,8 +151,8 @@ const Footer = () => {
                                 <div className="footer-menu-3 menu-items">
                                     <h1>Support</h1>
                                     <ul>
-                                        <li>Private Policy</li>
-                                        <li>Cookies Policy</li>
+                                        <li><a href="javascript:void(0);">Private Policy</a></li>
+                                        <li><a href="javascript:void(0);">Cookies Policy</a></li>
                                     </ul>
                                 </div>
                             </div>

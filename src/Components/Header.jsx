@@ -47,7 +47,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link " href="#" id="servicesDropdown" role="button">Our Services</a>
+                                <a className="nav-link " href="javascript:void(0);" id="servicesDropdown" role="button">Our Services</a>
                                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <li>
                                         <a href="/services" className="dropdown-item">
@@ -83,7 +83,7 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link " href="#" id="servicesDropdown" role="button">Solutions</a>
+                                <a className="nav-link " href="javascript:void(0);" id="servicesDropdown" role="button">Solutions</a>
                                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <li>
                                         <a className="dropdown-item" href="/services">Robotic Process Automation (RPA)</a>

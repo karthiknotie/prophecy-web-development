@@ -1,8 +1,6 @@
 import React from 'react'
 import "../Assets/styles/Blog.css"
 import BlogImage from "../Assets/Resources/blogimage.jpeg"
-import { Link } from 'react-router-dom'
-import { BiArrowBack } from "react-icons/bi";
 import BlogArrow from "../Assets/Resources/blog-arrow.svg"
 
 const BlogOverview = () => {
