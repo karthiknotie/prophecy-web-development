@@ -1,114 +1,105 @@
-import React from 'react'
-import "../Assets/styles/Blog.css"
-import BlogImage from "../Assets/Resources/blogimage.jpeg"
-import BlogArrow from "../Assets/Resources/blog-arrow.svg"
+import React, { useMemo, useState, useEffect } from 'react';
+import "../Assets/styles/Blog.css";
+import { Link, useParams } from 'react-router-dom';
+import AllPageLoader from '../Components/AllPageLoader';
+import NewBlogImage from "../Assets/Resources/blog-new.webp";
+import { useFetchBlogByIdQuery } from '../redux/features/blogs/blogsApi';
+import { formatDate } from '../utilis/FormatDate';
+import SingleBlog from './SingleBlog';
+import RelatedBlog from './RelatedBlog';
 
 const BlogOverview = () => {
+    const { id } = useParams(); // Getting blog ID from URL
+    const { data: blog, error, isLoading } = useFetchBlogByIdQuery(id); // Fetch the blog by ID
+
+    // Memoize the blog link to avoid unnecessary re-renders
+    const blogLink = useMemo(() => `${window.location.origin}/blog/${id}`, [id]);
+
+    // Handle page load for better user experience
+    useEffect(() => {
+        // Lazy loading images or other media could be handled here
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        lazyImages.forEach((image) => {
+            image.setAttribute('src', image.getAttribute('data-src'));
+        });
+    }, []);
+
+    if (isLoading) return <AllPageLoader />; // Show loader while fetching data
+    if (error) return <div>Error fetching blog details.</div>; // Handle errors
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(blogLink);
+        alert("Link copied to clipboard!"); // Confirmation alert
+    };
+
     return (
         <>
-            <section className='blog-section blog-overview-page'>
+            <section className="breadcrumb">
                 <div className="container">
-                    {/* <div className="sec-title">
-                        <h1>Latest Thoughts</h1>
-                    </div> */}
                     <div className="row">
-                        <div className="blog-item blog-detail">
-                            <div className="blog-image">
-                                <img src={BlogImage} alt="" />
-                                <div className="date">
-                                    <h6>Oct 20, 2024</h6>
-                                </div>
-                                <div className="arrow-shape">
-                                    <img src={BlogArrow} alt="" />
-                                </div>
-                            </div>
-                            <div className="blog-content">
-                                <div className="blog-title">
-                                    <div className="row">
-                                        <div className="col-lg-10">
-                                            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                        </div>
-                                        <div className="col-lg-2">
-                                            <div className="share">
-                                                <button>Share</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </div>
+                        <div className="breadcrumb-title">
+                            <h1 className="ban-title-animation">Blog Overview</h1>
                         </div>
-                        <div className="blog-overview-content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quia molestias recusandae libero est, repellendus laborum necessitatibus voluptatum qui sed quis ut doloribus iusto labore iste sint. Obcaecati, cum, labore consequuntur pariatur perspiciatis maxime, libero dolorem enim consectetur nobis vero.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident commodi reprehenderit consequuntur odio numquam suscipit quis modi laudantium, cupiditate quam, perspiciatis exercitationem reiciendis porro, id accusantium illo beatae ipsam. Animi porro commodi deserunt aliquam numquam ipsum repellat expedita nesciunt eveniet cupiditate veniam fugiat illum, saepe hic laborum suscipit quidem earum, unde eius tempora facilis architecto cumque? Quae possimus eos provident.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque omnis maxime, inventore nemo quis non repellendus commodi error dolorem culpa id ea quisquam. Consequuntur dolor totam architecto nobis blanditiis earum.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit deleniti temporibus? Ex rem sapiente ut totam quis iste vero, vitae doloremque, esse temporibus porro. Ea ad odit illo veniam architecto. Laboriosam saepe qui vitae, architecto dolor suscipit ea asperiores amet? Sint nostrum neque omnis maxime optio temporibus esse dolor eum laboriosam. A inventore illo provident impedit mollitia aliquid minima, dolores sunt animi eum maiores quidem voluptatum nulla eos non ex quod iste excepturi quaerat perferendis, nam aut ipsam. Impedit?</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque omnis maxime, inventore nemo quis non repellendus commodi error dolorem culpa id ea quisquam. Consequuntur dolor totam architecto nobis blanditiis earum.</p>
+                        <div className="breadcrumb-title-outline">
+                            <h1 className='ban-title-animation'>Blog Overview</h1>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="blog-section">
+                <div className="container">
+                    {/* Lazy Load the SingleBlog component */}
+                    {blog && (
+                        <React.Suspense fallback={<AllPageLoader />}>
+                            <SingleBlog blog={blog} />
+                        </React.Suspense>
+                    )}
                     <div className="row">
                         <div className="sec-title">
-                            <h1>Latest Blogs</h1>
+                            <h1>Related Blogs</h1>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="blog-item">
-                                <div className="blog-image">
-                                    <img src={BlogImage} alt="" />
-                                    <div className="date">
-                                        <h6>Oct 20, 2024</h6>
-                                    </div>
-                                </div>
-                                <div className="blog-content">
-                                    <div className="blog-title">
-                                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                    </div>
-                                    <div className="read-more">
-                                        <h6>Read More</h6>
-                                    </div>
-                                </div>
-                            </div>
+                        <React.Suspense fallback={<AllPageLoader />}>
+                            <RelatedBlog currentBlogId={id} />
+                        </React.Suspense>
+                    </div>
+                </div>
+            </section>
+
+            {/* Share Modal Popup */}
+            <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable career-modal share-modal">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="staticBackdropLabel">Share via</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="blog-item">
-                                <div className="blog-image">
-                                    <img src={BlogImage} alt="" />
-                                    <div className="date">
-                                        <h6>Oct 20, 2024</h6>
-                                    </div>
-                                </div>
-                                <div className="blog-content">
-                                    <div className="blog-title">
-                                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                    </div>
-                                    <div className="read-more">
-                                        <h6>Read More</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="blog-item">
-                                <div className="blog-image">
-                                    <img src={BlogImage} alt="" />
-                                    <div className="date">
-                                        <h6>Oct 20, 2024</h6>
-                                    </div>
-                                </div>
-                                <div className="blog-content">
-                                    <div className="blog-title">
-                                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                                    </div>
-                                    <div className="read-more">
-                                        <h6>Read More</h6>
-                                    </div>
+                        <div className="modal-body">
+                            <div className="share-blog-link">
+                                {/* Input field with the blog link */}
+                                <div className="input-container">
+                                    <input
+                                        type="text"
+                                        value={blogLink}
+                                        readOnly
+                                        className="form-control"
+                                        id="blogLinkInput"
+                                    />
+                                    {/* Button to copy the link */}
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={copyToClipboard}
+                                    >
+                                        Copy Link
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
-    )
-}
+    );
+};
 
-export default BlogOverview
+export default BlogOverview;

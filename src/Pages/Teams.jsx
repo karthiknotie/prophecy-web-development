@@ -6,10 +6,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import "../Assets/styles/Teams.css"
 import BannerLogo from "../Assets/Resources/banner-logo.svg";
+import AllPageLoader from '../Components/AllPageLoader';
 
 const Teams = () => {
     return (
         <>
+            <AllPageLoader />
             <section className='breadcrumb'>
                 <div className="container">
                     <div className="row">
@@ -37,29 +39,15 @@ const Teams = () => {
                                     <div className="row">
                                         <div className="col-lg-9">
                                             <div className="person-details">
-                                                <h1>Karthikeyan M</h1>
-                                                <h6>Web Developer</h6>
+                                                <h1>William Henry</h1>
+                                                <h6>Web Designer</h6>
                                             </div>
                                         </div>
                                         <div className="col-lg-3">
-                                            <div className="logo-icon">
-                                                <img src={BannerLogo} alt="" />
+                                            <div className="linkedin-icon">
+                                                <FaLinkedinIn className='icon' />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="social-media">
-                                    <div className="instagram icon">
-                                        <TiSocialFacebook />
-                                    </div>
-                                    <div className="x icon" >
-                                        <FaXTwitter />
-                                    </div>
-                                    <div className="linkedin icon">
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className="instagram icon">
-                                        <FaInstagram />
                                     </div>
                                 </div>
                             </div>
@@ -73,29 +61,15 @@ const Teams = () => {
                                     <div className="row">
                                         <div className="col-lg-9">
                                             <div className="person-details">
-                                                <h1>Karthikeyan M</h1>
-                                                <h6>Web Developer</h6>
+                                                <h1>William Henry</h1>
+                                                <h6>Web Designer</h6>
                                             </div>
                                         </div>
                                         <div className="col-lg-3">
-                                            <div className="logo-icon">
-                                                <img src={BannerLogo} alt="" />
+                                            <div className="linkedin-icon">
+                                                <FaLinkedinIn className='icon' />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="social-media">
-                                    <div className="instagram icon">
-                                        <TiSocialFacebook />
-                                    </div>
-                                    <div className="x icon" >
-                                        <FaXTwitter />
-                                    </div>
-                                    <div className="linkedin icon">
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className="instagram icon">
-                                        <FaInstagram />
                                     </div>
                                 </div>
                             </div>
@@ -109,29 +83,15 @@ const Teams = () => {
                                     <div className="row">
                                         <div className="col-lg-9">
                                             <div className="person-details">
-                                                <h1>Karthikeyan M</h1>
-                                                <h6>Web Developer</h6>
+                                                <h1>William Henry</h1>
+                                                <h6>Web Designer</h6>
                                             </div>
                                         </div>
                                         <div className="col-lg-3">
-                                            <div className="logo-icon">
-                                                <img src={BannerLogo} alt="" />
+                                            <div className="linkedin-icon">
+                                                <FaLinkedinIn className='icon' />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="social-media">
-                                    <div className="instagram icon">
-                                        <TiSocialFacebook />
-                                    </div>
-                                    <div className="x icon" >
-                                        <FaXTwitter />
-                                    </div>
-                                    <div className="linkedin icon">
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className="instagram icon">
-                                        <FaInstagram />
                                     </div>
                                 </div>
                             </div>

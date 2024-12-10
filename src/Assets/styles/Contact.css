@@ -1,7 +1,6 @@
 
-.contact-breadcrumb .breadcrumb-title{
-    background-color: #000;
-}
+
+
 .contact-breadcrumb .breadcrumb-title h6{
     font-size: 35px;
     font-weight: 600;
@@ -12,10 +11,14 @@
     position: relative;
     z-index: 99;
 }
+.contact-breadcrumb .breadcrumb-title{
+    font-size: 18px;
+    max-width: 70%;
+}
 
 .contact-breadcrumb .downarrow {
     position: absolute;
-    top: 70%;
+    bottom: -5%;
     right: 50%;
     z-index: 999;
     transform: translateX(50%);
@@ -68,18 +71,10 @@
     text-align: center;
 }
 .contact-form-section .sec-title h1{
-    padding-bottom: 10px;
+        padding-bottom: 10px;
         margin: auto;
-        width: 60%;
-        background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(0,133,255,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
         position: relative;
-        color: #fff;
-        font-size: 100px;
-        line-height: 100px;
+        color: #81c2ff;
     }
     .contact-form-section .sec-title  h6{
         font-family: 'Graphik Trial', sans-serif;
@@ -96,14 +91,18 @@
         border-radius: 20px;
         border: 1px solid #027EF0;
         background: rgb(0,47,142);
-        background: linear-gradient(36deg, rgba(0, 47, 142, 0.671) 0%, rgba(0,0,0,1) 67%, rgba(0,47,142,1) 100%);
+        background: linear-gradient(36deg, rgba(0, 47, 142, 0.1) 0%, rgba(0,0,0,0.5) 67%, rgba(0,47,142,0.5) 100%);
+        transition: all 1s ease;
+    }
+    .contact-form-section .contact-form:hover{
+        box-shadow: 0 0 100px #027df034, 0 0 60px #027df066, 0 0 40px #027EF0;
     }
     .contact-form-section .contact-form h1{
         font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 25px;
+        font-weight: 600;
+        font-size: 30px;
         color: #fff;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .contact-form-section .contact-form label{
         width: 100%;
@@ -209,7 +208,7 @@
          position: absolute;
          top: 20%;
          right: -45%;
-         height: 1600px;
+         height: 1200px;
          width: 800px;
          border-radius: 500px;
          filter: blur(100px);
@@ -220,7 +219,7 @@
          position: absolute;
          top: 20%;
          left: -42%;
-         height: 1600px;
+         height: 1200px;
          width: 700px;
          border-radius: 500px;
          filter: blur(100px);
@@ -245,18 +244,10 @@
         align-items: center;
     }
     .opportunity-section .sec-title h1{
-        padding-bottom: 10px;
+            padding-bottom: 10px;
             margin: auto;
-            width: 60%;
-            background: rgb(255,255,255);
-            background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(0,133,255,1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
             position: relative;
-            color: #fff;
-            font-size: 100px;
-            line-height: 100px;
+            color: #81c2ff;
 }
 .opportunity-section .sec-title  h6{
             font-family: 'Graphik Trial', sans-serif;
@@ -284,7 +275,7 @@
 .contact-location{
     position: relative;
     padding: 130px 0px;
-    background-image: url("../Resources//contact-map-bg.svg");
+    background-image: url("../Resources//contact-map-bg-2.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -292,16 +283,8 @@
 .contact-location .sec-title h1{
     padding-bottom: 10px;
         margin: auto;
-        width: 60%;
-        background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 30%, rgba(0,133,255,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
         position: relative;
-        color: #fff;
-        font-size: 100px;
-        line-height: 100px;
+        color: #81c2ff;
 }
 .contact-location .sec-title  h6{
         font-family: 'Graphik Trial', sans-serif;
@@ -326,9 +309,13 @@
     width: 500px;
 }
 
-
 /* branch address styles */
 
+.branch-address .second-location{
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
 .branch-address .branch-item{
     max-width: 70%;
     margin: auto;
@@ -341,6 +328,7 @@
     color: #fff;
 }
 .branch-address p{
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
     font-size: 14px;
@@ -366,15 +354,8 @@
         padding-bottom: 10px;
         margin: auto;
         width: 100%;
-        background: rgb(2,126,240);
-        background: linear-gradient(108deg, rgba(2,126,240,1) 0%, rgba(0,0,0,1) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #001d38;
         position: relative;
-        color: #fff;
-        font-size: 100px;
-        line-height: 100px;
 }
 .contact-cta .sec-title  h6{
     width: 70%;
@@ -384,4 +365,302 @@
     font-weight: 300;
     font-size: 16px;
     color: #000;
+}
+
+
+
+/* responsive  */
+
+@media screen and (min-device-width:320px) and (max-device-width: 480px){
+    .service-points-stick .sticky-content{
+        height: 100% !important;
+        margin-bottom: 50px;
+    }
+    .contact-breadcrumb .breadcrumb-title{
+        width: 100%;
+        max-width: 95%;
+    }
+    .contact-breadcrumb .breadcrumb-title h1{
+        font-size: 40px;
+    }
+    .contact-breadcrumb .breadcrumb-title h6{
+        font-size: 20px;
+    }
+    .contact-breadcrumb .breadcrumb-title p{
+        font-size: 10px;
+        color: var(--light-color);
+    }
+    .contact-breadcrumb .shape2{
+        display: none;
+    }
+    .contact-breadcrumb .shape1{
+        display: none;
+    }
+    .contact-form-section {
+        padding-top: 50px;
+    }
+    .contact-breadcrumb .downarrow{
+        display: none;
+    }
+    .contact-form-section .sec-title h6{
+        font-size: 20px;
+    }
+    .contact-form-section .contact-form h1{
+        font-size: 20px;
+    }
+    .contact-form-section .contact-form label{
+        font-size: 15px;
+        margin: 0px;
+        padding-top: 20px;
+    }
+    .contact-form-section .checked-shape {
+        left: -50%;
+        top: 100%;
+    }
+    .contact-form-section .checked-shape img {
+        width: 300px;
+        height: 250px;
+    }
+    .opportunity-section{
+        padding: 100px 0px;
+    }
+    .opportunity-section .large-title {
+        z-index: 9999;
+    }
+    .opportunity-section .large-title h6{
+        font-size: 20px;
+    }
+    .opportunity-section .sec-title p{
+        color: var(--light-color);
+        width: 100%;
+        font-size: 13px;
+    }
+    .contact-location .checked-shape{
+        display: none;
+    }
+    .contact-location{
+        padding: 50px 0px;
+    }
+    .contact-location .sec-title h6{
+        font-size: 20px;
+    }
+    .common-btn button {
+        height: 50px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .contact-cta {
+        padding: 50px 0px;
+    }
+    .contact-cta .sec-title h6{
+        width: 100%;
+        font-size: 13px;
+    }
+    .branch-address .branch-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .branch-address p{
+        font-size: 13px;
+    }
+    .branch-address h6 {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-device-width:481px) and (max-device-width: 768px){
+
+    .contact-breadcrumb .breadcrumb-title{
+        width: 100%;
+        max-width: 95%;
+    }
+    .contact-breadcrumb .breadcrumb-title h1{
+        font-size: 50px;
+    }
+    .contact-breadcrumb .breadcrumb-title h6{
+        font-size: 25px;
+    }
+    .contact-breadcrumb .breadcrumb-title p{
+        font-size: 13px;
+        color: var(--light-color);
+    }
+    .contact-breadcrumb .shape2{
+        display: none;
+    }
+    .contact-breadcrumb .shape1{
+        display: none;
+    }
+    .contact-form-section {
+        padding-top: 50px;
+    }
+    .contact-breadcrumb .downarrow{
+        display: none;
+    }
+    .contact-form-section .sec-title h6{
+        font-size: 20px;
+    }
+    .contact-form-section .contact-form h1{
+        font-size: 25px;
+    }
+    .contact-form-section .contact-form label{
+        font-size: 18px;
+        margin: 0px;
+        padding-top: 20px;
+    }
+    .contact-form-section .checked-shape {
+        left: -50%;
+        top: 100%;
+    }
+    .contact-form-section .checked-shape img {
+        width: 300px;
+        height: 250px;
+    }
+    .opportunity-section{
+        padding: 100px 0px;
+    }
+    .opportunity-section .large-title {
+        z-index: 9999;
+    }
+    .opportunity-section .large-title h6{
+        font-size: 25px;
+    }
+    .opportunity-section .sec-title p{
+        width: 100%;
+        font-size: 13px;
+        color: var(--light-color);
+    }
+    .contact-location .checked-shape{
+        display: none;
+    }
+    .contact-location{
+        padding: 50px 0px;
+    }
+    .contact-location .sec-title h6{
+        font-size: 25px;
+    }
+    .common-btn button {
+        height: 55px;
+        width: 160px;
+        font-size: 17px;
+    }
+    .contact-cta {
+        padding: 50px 0px;
+    }
+    .contact-cta .sec-title h6{
+        width: 100%;
+        font-size: 13px;
+    }
+    .branch-address .branch-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .branch-address p{
+        font-size: 18px;
+    }
+    .branch-address h6 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-device-width:769px) and (max-device-width: 1024px){
+    
+
+    .contact-breadcrumb .breadcrumb-title{
+        width: 100%;
+        max-width: 95%;
+    }
+    .contact-breadcrumb .breadcrumb-title h1{
+        font-size: 80px;
+    }
+    .contact-breadcrumb .breadcrumb-title h6{
+        font-size: 30px;
+    }
+    .contact-breadcrumb .breadcrumb-title p{
+        font-size: 18px;
+        color: var(--light-color);
+    }
+    .contact-breadcrumb .shape2{
+        display: none;
+    }
+    .contact-breadcrumb .shape1{
+        display: none;
+    }
+    .contact-form-section {
+        padding-top: 50px;
+    }
+    .contact-breadcrumb .downarrow{
+        display: none;
+    }
+    .contact-form-section .sec-title h6{
+        font-size: 30px;
+    }
+    .contact-form-section .contact-form h1{
+        font-size: 28px;
+    }
+    .contact-form-section .contact-form label{
+        font-size: 20px;
+        margin: 0px;
+        padding-top: 20px;
+    }
+    .contact-form-section .checked-shape {
+        left: -50%;
+        top: 100%;
+    }
+    .contact-form-section .checked-shape img {
+        width: 300px;
+        height: 250px;
+    }
+    .opportunity-section{
+        padding: 100px 0px;
+    }
+    .opportunity-section .large-title {
+        z-index: 9999;
+    }
+    .opportunity-section .large-title h6{
+        font-size: 30px;
+    }
+    .opportunity-section .sec-title p{
+        width: 100%;
+        font-size: 18px;
+        color: var(--light-color);
+    }
+    .contact-location .checked-shape{
+        display: none;
+    }
+    .contact-location{
+        padding: 50px 0px;
+    }
+    .contact-location .sec-title h6{
+        font-size: 25px;
+    }
+    .common-btn button {
+        height: 60px;
+        width: 170px;
+        font-size: 18px;
+    }
+    .contact-cta {
+        padding: 50px 0px;
+    }
+    .contact-cta .sec-title h6{
+        width: 100%;
+        font-size: 18px;
+    }
+    .branch-address .branch-item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .branch-address p{
+        font-size: 18px;
+    }
+    .branch-address h6 {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (min-device-width:1024px) and (max-device-width: 1400px){
+    .contact-breadcrumb .downarrow{
+        bottom: -45%;
+    }
 }

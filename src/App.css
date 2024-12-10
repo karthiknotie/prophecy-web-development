@@ -1,7 +1,21 @@
 /* fonts */
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 @import url('https://fonts.cdnfonts.com/css/graphik-trial');
+@import url('https://fonts.cdnfonts.com/css/inter');
 
+body{
+  overflow-x: hidden;
+}
+
+:root{
+  --graphik-font:'Gilroy-Bold', sans-serif;
+  --inter-font:'Inter', sans-serif;
+  --light-color:#A2A2A2;
+  --primary-color:#027EF0;
+}
+a{
+  cursor: pointer;
+  font-family: var(--graphik-font);
+}
 .prophecy{
   background-color: #000;
 }
@@ -9,8 +23,54 @@ html{
   background-color: #000;
 }
 h1{
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: var(--graphik-font);
+}
+h2{
+  font-family: var(--graphik-font);
+}
+h3{
+  font-family: var(--graphik-font);
+}
+h4{
+  font-family: var(--graphik-font);
+}
+h5{
+  font-family: var(--graphik-font);
+}
+h6{
+  font-family:var(--graphik-font);
 }
 p{
-  font-family: 'Gilroy-Regular', sans-serif;
+  text-align: justify;
+  font-family: var(--inter-font);
+  color: var(--light-color) !important;
+}
+
+html.lenis,html.lenis body{
+  height: auto;
+}
+.lenis.lenis-smooth{
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent]{
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped{
+overflow: hidden;
+}
+.lenis.lenis-smooth iframe{
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #85c4ff;
 }

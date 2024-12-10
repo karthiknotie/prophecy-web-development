@@ -1,5 +1,5 @@
 .career-section{
-    padding: 100px 0px;
+    padding: 20px 0px 100px 0px;
 }
 .career-section .career-accordian{
     display: flex;
@@ -18,9 +18,22 @@
     height: 50px;
     width: 180px;
 }
-.career-section .job-notices{
+.job-offers-section{
+    background-position: center;
+    background-image: url("../Resources/approach-image-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 100px 0px;
     margin-top: 50px;
 }
+.job-offers-section .latest-job-title{
+    font-size: 50px;font-weight: 600;
+}
+/* .career-section .job-notices{
+    margin-top: 50px;
+
+} */
 .career-section .career-accordian .item h6{
     color: #000;
     margin-bottom: 0px;
@@ -47,11 +60,18 @@
     color: #fff;
 }
 .career-section .box-content .title h6{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 13px;
     color: #fff;
     border: 2px solid #027EF0;
     border-radius: 20px;
     padding: 8px;
+}
+.career-section .box-content .hour{
+    font-size: 18px;
+    color: #fff;
 }
 .career-section .box-content .title .icon{
     font-size: 15px;
@@ -84,7 +104,326 @@
     padding: 10px;
     width: 150px;
     border: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.filter-career{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.filter-career .blog-search-input input{
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.filter-career h3{
+    font-size: 50px;
+    font-weight: 600;
+}
+.filter-career select {
+    width: 300px;
+    padding: 10px 20px;
+    padding-right: 50px; /* Add more space to the right */
+    border-radius: 10px;
+    border: 1px solid #027EF0;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.filter-career label{
+    margin-top: 20px;
+}
+
+
+/* modal popup styles */
+.modal{
+    z-index: 9999999 !important;
+}
+.career-modal .modal-content{
+    padding: 20px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 1px solid #027EF0;
+    background: rgb(0,91,175);
+    background: linear-gradient(125deg, rgba(0,91,175,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,91,175,1) 100%);
+}
+.modal .career-modal{
+    max-width: 800px;
+}
+
+.career-modal .modal-header{
+    border-bottom: none;
+}
+.career-modal .modal-title{
+    color: #fff;
+    font-size: 30px;
+}
+.career-modal .modal-footer{
+    border-top: none;
+}
+.career-modal  .modal-body h3{
+    color: #d7d7d7;
+    font-size: 25px;
+}
+.career-modal  .modal-body p{
+    color: #878787;
+    font-size: 15px;
+    max-width: 70%;
+}
+.career-modal form label{
+    color: #fff;
+    margin-top: 20px;
+    padding: 5px 0px;
+}
+.career-modal form input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: none;
+    border: 1px solid #3E3E3E;
+}
+.career-modal .file-choose label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.career-modal .file-choose label input{
+    width: 70%;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.career-modal .btn-close{
+    filter: brightness(0) invert(1);
+}
+.career-modal .modal-body .apply-btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px !important;
+}
+.career-modal .modal-body .apply-btn{
+    background: rgb(2,126,240);
+    background: linear-gradient(270deg, rgba(255,255,255,1) 50%,rgba(2,126,240,1) 100%);
+    border-radius: 30px;
+    padding: 10px;
+    width: 250px;
+    border: none;
     margin-top: 10px;
     font-size: 17px;
     font-weight: 500;
+}
+
+.career-section .small-title{
+    margin-bottom: 20px;
+    font-family: var(--inter-font);
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.career-section .title p{
+    margin-bottom: 30px;
+}
+/* .filter-career{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-career select{
+    width: 100%;
+} */
+/* responsive */
+
+
+
+@media screen and (min-device-width:320px) and (max-device-width: 480px){
+
+    .filter-career {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .filter-career select{
+        width: 300px;
+    }
+    .filter-career .blog-search-input input{
+        width: 300px;
+    }
+    .career-section .small-title {
+        font-size: 20px;
+    }
+    .career-section .box-content {
+        height: auto;
+    }
+    .career-section .box-content .title h1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .career-section .box-content .title h6{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .career-section .box-content h6{
+        font-size: 13px;
+    }
+    .career-section .box-content p{
+        font-size: 15px;
+    }
+    .career-section .box-content .role-salary h6 {
+        font-size: 13px;
+    }
+    .career-section .box-content .apply-btn button {
+        padding: 5px;
+        width: 120px;
+        font-family: var(--inter-font);
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .career-section .job-notices{
+        margin-top: 0px;
+    }
+    .career-modal .modal-body h3{
+        font-size: 15px;
+    }
+    .career-modal .modal-body p{
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .career-modal form input{
+        padding: 10px;
+    }
+    .career-modal .modal-content{
+        padding: 10px;
+    }
+    .career-modal .file-choose label{
+        font-size: 13px;
+    }
+    .career-modal .modal-footer .apply-btn button {
+        padding: 10px;
+        width: 140px;
+        font-family: var(--inter-font);
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (min-device-width:481px) and (max-device-width: 768px){
+    .career-section .box-content {
+        height: auto;
+    }
+    .career-section .box-content .title h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .career-section .box-content .title h6{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .career-section .box-content h6{
+        font-size: 16px;
+    }
+    .career-section .box-content p{
+        font-size: 18px;
+    }
+    .career-section .box-content .role-salary h6 {
+        font-size: 16px;
+    }
+    .career-section .box-content .apply-btn button {
+        padding: 10px;
+        width: 150px;
+        font-family: var(--inter-font);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .career-section .job-notices{
+        margin-top: 0px;
+    }
+    .career-modal .modal-body h3{
+        font-size: 18px;
+    }
+    .career-modal .modal-body p{
+        max-width: 100%;
+        font-size: 18px;
+    }
+    .career-modal form input{
+        padding: 10px;
+    }
+    .career-modal .modal-content{
+        padding: 10px;
+    }
+    .career-modal .file-choose label{
+        font-size: 18px;
+    }
+    .career-modal .modal-footer .apply-btn button {
+        padding: 10px;
+        width: 150px;
+        font-family: var(--inter-font);
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-device-width:769px) and (max-device-width: 1024px){
+    .career-section .box-content {
+        height: auto;
+    }
+    .career-section .box-content .title h1{
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .career-section .box-content .title h6{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .career-section .box-content h6{
+        font-size: 19px;
+    }
+    .career-section .box-content p{
+        font-size: 21px;
+    }
+    .career-section .box-content .role-salary h6 {
+        font-size: 19px;
+    }
+    .career-section .box-content .apply-btn button {
+        padding: 10px;
+        width: 200px;
+        font-family: var(--inter-font);
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .career-section .job-notices{
+        margin-top: 0px;
+    }
+    .career-modal .modal-body h3{
+        font-size: 21px;
+    }
+    .career-modal .modal-body p{
+        max-width: 100%;
+        font-size: 21px;
+    }
+    .career-modal form input{
+        padding: 10px;
+    }
+    .career-modal .modal-content{
+        padding: 10px;
+    }
+    .career-modal .file-choose label{
+        font-size: 21px;
+    }
+    .career-modal .modal-footer .apply-btn button {
+        padding: 10px;
+        width: 150px;
+        font-family: var(--inter-font);
+        font-size: 21px;
+        font-weight: 600;
+    }
 }

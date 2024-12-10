@@ -1,0 +1,492 @@
+.aboutpage-1sec{
+    padding: 100px 0px;
+}
+.contdown-section{
+    padding-bottom: 100px;
+}
+.contdown-section .box1{
+    border-radius: 20px;
+    border: 1px solid #027EF0;
+    background: rgb(8,9,11);
+    background: linear-gradient(144deg, rgba(8,9,11,1) 35%, rgba(7,30,51,1) 69%, rgba(7,43,79,1) 85%, rgba(4,66,122,1) 100%);
+}
+.contdown-section .box2{
+    border-radius: 20px;
+    border: 1px solid #027EF0;
+    background: rgb(4,43,146);
+    background: linear-gradient(43deg, rgba(4,43,146,1) 0%, rgba(4,32,105,1) 16%, rgba(6,21,59,1) 48%, rgba(8,11,14,1) 87%);   
+}
+.contdown-section .box-content{
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contdown-section  .box-content{
+    margin-top: 30px;
+}
+.contdown-section .box-content h1{
+    font-family: var(--graphik-font);
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.contdown-section .box-content p{
+    font-family: var(--inter-font);
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+.contdown-section .sec-title .large-title h1{
+    line-height: 60px;
+    color: #fff;
+    font-family: var(--graphik-font);
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contdown-section .box-content h1{
+    font-size: 60px;
+}
+
+.about-journey .left-image{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+}
+.about-journey .left-image img{
+    filter: grayscale();
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about-journey{
+    padding: 100px 0px;
+}
+
+.about-core-strenght .large-title h1{
+    text-align: center;
+    font-family: var(--graphik-font);
+    font-size: 100px;
+    line-height: 110px;
+    font-weight: 600;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(0,133,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.about-core-strenght-contents .image{
+    width: 100%;
+    height: 350px;
+}
+.about-core-strenght-contents .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about-core-strenght-contents .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.about-core-strenght-contents .content p{
+    margin-top: 30px;
+}
+.about-core-strenght-contents .content h1{
+    font-size: 40px;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.about-mission-vision{
+    padding: 200px 0px 90px 0px;
+}
+
+.about-mission-vision .icon .react-icons{
+    font-size: 35px;
+}
+.about-mission-vision .service-box{
+    height: 300px;
+    background: rgb(4,43,146);
+    background: linear-gradient(43deg, rgba(4,43,146,1) 0%, rgba(4,32,105,1) 16%, rgba(6,21,59,1) 48%, rgba(8,11,14,1) 87%);
+}
+
+
+
+
+.about-service-section{
+    background: none;
+}
+.about-service-section .large-title h1{
+    text-align: center;
+    font-weight: 600;
+    color: #81c2ff !important;
+}
+.about-service-section .sec-title p{
+    color: #fff !important;
+}
+.about-service-section .image{
+    width: 100%;
+    height: 700px;
+    position: sticky;
+    top: 20px;
+}
+.about-service-section .image img{
+    filter: contrast(1.5);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about-service-section .approach-box{
+    background: #000 !important;   
+}
+
+.about-service-section .approach-box h1{
+    color: #fff !important;
+}
+.about-page-service .box-content .approach-box {
+    height: 270px;
+}
+
+.partners-slide{
+    padding: 100px 0px 200px 0px;
+}
+.partners-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.partners-marquee-content {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.partners-marquee-content .image {
+    margin-right: 20px; /* Adjust spacing as needed */
+    height: 200px;
+    background: rgb(4,43,146);
+    background: linear-gradient(43deg, rgba(4,43,146,1) 0%, rgba(4,32,105,1) 16%, rgba(6,21,59,1) 48%, rgba(8,11,14,1) 87%);
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.partners-slide .sec-title .large-title h1{
+    text-align: center;
+    font-family: var(--graphik-font);
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 600;
+    color: #81c2ff;
+    margin-bottom: 50px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Move by half of the content width */
+    }
+}
+
+
+
+
+
+.about-client-slide{
+    padding:0px 0px 150px 0px;
+}
+.about-client-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.about-client-marquee-content {
+    display: inline-flex;
+    animation: marqueenew 20s linear infinite;
+}
+
+.about-client-marquee-content .image {
+    margin-right: 20px; /* Adjust spacing as needed */
+    height: 200px;
+   background-color: #fff;
+   border: 1px solid #027EF0;
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.about-client-marquee-content .image img{
+    max-width: 50%;
+}
+.about-client-slide .sec-title .large-title h1{
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+    font-family: var(--graphik-font);
+    font-weight: 600;
+color: #81c2ff;
+    margin-bottom: 50px;
+}
+
+@keyframes marqueenew {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.approach-section{
+    padding: 100px 0px;
+}
+.aboutpage-approach-section .icon img{
+    filter: brightness(0) invert(1);
+    max-width: 50%;
+}
+
+
+
+/* responsive  */
+
+@media screen and (min-device-width:320px) and (max-device-width: 480px){
+    .about-page-service .box-content{
+        overflow-x: hidden;
+    }
+    .navbar-nav .nav-item a{
+        display: flex;
+        align-items: center;
+    }
+    .dropdown .dropdown-menu .dropdown-item{
+        padding: 10px 0px;
+    }
+    .aboutpage-1sec {
+        padding: 50px 0px;
+    }
+    .AboutSection .content .large-title h1{
+        margin-bottom: 30px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        font-size: 30px;
+    }
+    .contdown-section .box-content {
+        height: 180px;
+        padding: 10px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        margin-bottom: 20px;
+    }
+    .contdown-section .box-content h1{
+        font-size: 40px;
+    }
+    .about-journey{
+        padding: 50px 0px;
+    }
+    .about-journey .left-image img{
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    .approach-section{
+        padding: 50px 0px;
+    }
+    .about-mission-vision{
+        padding:150px 0px 100px 0px;
+    }
+    .about-client-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .about-client-marquee-content .image img{
+        width: 50px;
+    }
+    .about-client-slide {
+        padding:0px 0px 50px 0px;
+    }
+    .about-service-section .image {
+        height: 500px;
+        margin: 50px 0px;
+    }
+    .partners-slide{
+        padding:0px 0px 100px 0px;
+    }
+    .partners-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .partners-marquee-content .image img{
+        width: 50px;
+    }
+    .about-mission-vision .service-box{
+        height: auto !important;
+    }
+    .about-page-service .box-content .approach-box {
+        height: auto;
+    }
+}
+
+
+@media screen and (min-device-width:481px) and (max-device-width: 768px){
+    
+    .aboutpage-1sec {
+        padding: 50px 0px;
+    }
+    .AboutSection .content .large-title h1{
+        margin-bottom: 30px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        font-size: 30px;
+    }
+    .contdown-section .box-content {
+        height: 180px;
+        padding: 10px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        margin-bottom: 20px;
+    }
+    .contdown-section .box-content h1{
+        font-size: 40px;
+    }
+    .about-journey{
+        padding: 50px 0px;
+    }
+    .about-journey .left-image img{
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    .approach-section{
+        padding: 50px 0px;
+    }
+    .about-mission-vision{
+        padding:150px 0px 100px 0px;
+    }
+    .about-client-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .about-client-marquee-content .image img{
+        width: 50px;
+    }
+    .about-client-slide {
+        padding:0px 0px 50px 0px;
+    }
+    .about-service-section .image {
+        height: 800px;
+        margin: 50px 0px;
+    }
+    .partners-slide{
+        padding:0px 0px 100px 0px;
+    }
+    .partners-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .partners-marquee-content .image img{
+        width: 50px;
+    }
+    .about-mission-vision .service-box{
+        height: auto !important;
+    }
+    .about-page-service .box-content .approach-box {
+        height: auto;
+    }
+    .approach-section{
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (min-device-width:769px) and (max-device-width: 1024px){
+        
+    .aboutpage-1sec {
+        padding: 50px 0px;
+    }
+    .AboutSection .content .large-title h1{
+        margin-bottom: 30px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        font-size: 30px;
+    }
+    .contdown-section .box-content {
+        height: 180px;
+        padding: 10px;
+    }
+    .contdown-section .sec-title .large-title h1 {
+        margin-bottom: 20px;
+    }
+    .contdown-section .box-content h1{
+        font-size: 40px;
+    }
+    .about-journey{
+        padding: 50px 0px;
+    }
+    .about-journey .left-image img{
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    .approach-section{
+        padding: 50px 0px;
+    }
+    .about-mission-vision{
+        padding:150px 0px 100px 0px;
+    }
+    .about-client-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .about-client-marquee-content .image img{
+        width: 50px;
+    }
+    .about-client-slide {
+        padding:0px 0px 50px 0px;
+    }
+    .about-service-section .image {
+        height: 800px;
+        margin: 50px 0px;
+    }
+    .partners-slide{
+        padding:0px 0px 100px 0px;
+    }
+    .partners-marquee-content .image{
+        width: 100px;
+        height: 100px;
+    }
+    .partners-marquee-content .image img{
+        width: 50px;
+    }
+    .about-mission-vision .service-box{
+        height: auto !important;
+    }
+    .about-page-service .box-content .approach-box {
+        height: auto;
+    }
+    .approach-section{
+        overflow-x: hidden;
+    }
+    .breadcrumb-title p {
+        max-width: 70%;
+        margin: auto;
+    }
+}

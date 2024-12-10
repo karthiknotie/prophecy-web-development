@@ -1,39 +1,41 @@
 .service-hero-section{
     position: relative;
+    margin-bottom: 100px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba(0,63,120,1) 90%, rgba(2, 125, 240, 0.728) 100%);
 }
 .service-hero-section .banner-content{
+    position: relative;
+    z-index: 9999;
     padding:100px 0px 220px 0px;
     text-align: center;
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba(0,63,120,1) 90%, rgba(2, 125, 240, 0.728) 100%);
 }
 .service-hero-section .banner-content h1{
     font-family: 'Graphik Trial', sans-serif;
     font-size: 100px;
     line-height: 100px;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(0,133,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #81c2ff;
     font-weight: 600;
 }
 .service-hero-section .banner-content p{
     font-family: 'Inter', sans-serif;
     padding-top: 40px;
     color: #FBFBFB;
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-weight: 200;
     margin: auto;
 
+}
+.service-hero-section button{
+    position: relative;
 }
 .service-hero-section .banner-content h6{
             font-family: 'Graphik Trial', sans-serif;
             font-size: 35px;
             font-weight: 500;
             color: #fff;
-            max-width: 700px;
+            max-width: 1000px;
             margin: auto;
             margin-top: 20px;
 }
@@ -46,25 +48,43 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
    mix-blend-mode: color-dodge;
    opacity: 90%;
 }
-
-
+.service-large-btn button{
+    width: 300px;
+}
+.service-mega-btn button{
+    width: 400px;
+}
+.service-mega-btn{
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+}
+.service-large-mega-btn button{
+    width: 500px;
+}
+.sticky-service-section .item{
+    height: 120px;
+    text-align: center;
+}
+.sticky-service-section .item .item-content{
+    width: 100%;
+}
+.sticky-service-section .item .item-content h1{
+    max-width: 100% !important;
+    text-align: center !important;
+}
 /* service sextion one */
 .gradient-bg-servicepage .gradient-bg-radial-1{
     top: 0;
 }
-.service-section-one{
-    padding: 200px 0px;
-}
 .service-section-one .content h1{
     font-family: 'Graphik Trial', sans-serif;
-    font-size: 100px;
-    line-height: 100px;
-    font-weight: 600;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(0,133,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #81c2ff;
+}
+.service-section-one .service-text-space-remove h1 {
+    padding: 100px 0px;
 }
 .service-section-one .content h6 {
     font-family: 'Graphik Trial', sans-serif;
@@ -88,7 +108,6 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
 }
 
 
-
 /* service section two */
 /* .unlock-potential{
     position: relative;
@@ -103,17 +122,15 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     width: 600px;
     height: 500px;
 } */
-.service-section-two{
-    padding: 0px 0px 100px 0px ;
-}
-.service-section-two .active{
-    background: rgb(0,0,0) !important;
-    background: linear-gradient(53deg,rgba(15, 32, 72, 0.662) 40%, rgba(21,42,97,1) 100%) !important;
+
+.service-sec p{
+    text-align: left;
 }
 .service-section-two .active::before{
     display: none;
 }
 .service-section-two .item {
+    margin-bottom: 30px;
     position: relative;
     padding: 30px;
     border-radius: 30px;
@@ -122,6 +139,11 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 49%, rgba(0,12,50,1) 100%);
     z-index: 1;
+    transition: all 1s ease;
+}
+.service-section-two .item:hover{
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(53deg,rgba(15, 32, 72, 0.662) 40%, rgba(21,42,97,1) 100%) !important;
 }
 
 .service-section-two .item::before {
@@ -165,24 +187,21 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     max-width: 80%;
 }
 
-
+.service-hero-section .common-btn button{
+    width: 250px;
+}
 /* service section three */
 
 .service-section-three{
-    padding: 100px 0px;
     background: rgb(25,57,158);
     background: linear-gradient(214deg, rgb(24, 63, 189) 0%, rgba(0,0,0,1) 30%,rgba(0,0,0,1) 60%, rgb(24, 62, 186) 100%);
 }
 .service-section-three .title h1{
     font-family: 'Graphik Trial', sans-serif;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 90px;
+    line-height: 90px;
     font-weight: 600;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(0,133,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #81c2ff;
 }
 .service-section-three  p{
     color: #FBFBFB;
@@ -211,12 +230,20 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     font-weight: 500;
     color: #fff;
 }
+.serSlide{
+    padding: 10px;
+}
+.serSlideItems{
+    padding-top: 50px;
+}
 .service-section-three .benefit-items .item{
-    height: 260px;
+    height: 400px;
+    width: 100%;
     padding: 30px;
     border-radius: 30px;
     border: 2px solid #A2B2E3;
     background: rgba(25, 56, 158, 0.432);
+    transition: transform 1s ease-in-out;
 }
 .service-section-three .benefit-items .item .icon{
     display: flex;
@@ -227,19 +254,48 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     width: 50px;
     height: 50px;
     background-color: #000000bd;
+    transition: all 1s ease !important; 
 }
+
+.benefit-items .item{
+    transition: all 1s ease !important; 
+}
+ .benefit-items .item:hover {
+    background-color: #000;
+    margin-top: -10px;
+    transition: transform 1s ease-in-out ; 
+}
+.benefit-items .item:hover .icon{
+    background-color: #fff;
+}
+.benefit-items .item:hover .icon img{
+    filter: brightness(0);
+}
+
+.benefit-items .item  .icon img {
+    transition: transform 1s ease-in-out; 
+}
+
+.benefit-items .item:hover .icon img {
+    transform: rotate(360deg); /* Rotate on hover */
+}
+
+
 .service-section-three .benefit-items .item h6{
     font-size: 25px;
     color: #fff;
     margin-top: 20px;
 }
 .service-section-three .benefit-items .item p{
+    text-align: justify;
     font-size: 15px;
     color: #fff;
-    margin-top: 0px;
-    padding-left: 0px;
-    text-align: left;
-    margin: initial;
+    padding-top: 10px;
+    margin: 0px;
+    max-width: 100%;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
 }
 .service-section-three .title h6{
     text-align: left;
@@ -252,12 +308,24 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     background: none;
 }
 
+.service-points-stick{
+    overflow: visible;
+    position: static;
+}
+.service-points-stick .sticky-content{
+    width: 100%;
+    height: 700px;
+    position: sticky;
+    top: 120px; /* Adjust as needed */
+}
+
 
 /* service cta styles */
 
 .service-cta{
-    margin-top: 50px;
-    padding: 100px 0px;
+    z-index: 999999;
+    position: relative;
+    margin-top: -20px;
     background-image: url("../Resources/service-page-cta-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,15 +338,15 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
     padding-bottom: 10px;
     margin: auto;
     width: 100%;
-    background: rgb(2,126,240);
-    background: linear-gradient(-108deg, rgba(2,126,240,1) 0%, rgba(0,0,0,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #001d38;
     position: relative;
-    color: #fff;
     font-size: 100px;
     line-height: 100px;
+    max-width: 100%;
+    width: 100%;
+}
+.service-page-cta .sec-title{
+    width: 90%;
 }
 .service-cta .content p{
     margin-top: 30px;
@@ -289,4 +357,356 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 15%, rgba(0,33,63,1) 75%, rgba
 }
 .service-cta .image img{
     width: 100%;
+}
+
+
+
+
+@media screen and (min-device-width:320px) and (max-device-width: 480px){
+    .service-hero-section .banner-content{
+        padding: 100px 20px;
+    }
+    .service-hero-section .banner-content h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .service-hero-section .banner-content h6{
+        font-size: 20px;
+    }
+    .service-hero-section .banner-content p{
+        max-width: 100%;
+        font-size: 13px;
+        width: 100%;
+    }
+    .service-section-one .content h6{
+        font-size: 20px;
+    }
+    .service-section-one .content h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .service-section-one .content p{
+        text-align: justify;
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    .service-section-one .image img{
+        display: flex;
+        justify-content: center;
+        max-width: 70%;
+        margin: auto;
+        width: 100%;
+        padding: 30px;
+    }
+    .service-section-one {
+        overflow: hidden;
+        padding: 50px 0px 0px 0px;
+    }
+    .service-section-three {
+        overflow: hidden;
+    }
+    .service-section-three p{
+        margin-top: 0px;
+    }
+    .service-section-two .item .item-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .service-section-two .item{
+        margin-bottom: 30px;
+    }
+    .service-section-two .item-content p{
+        font-size: 13px;
+        color: var(--light-color);
+        line-height: 18px;
+    }
+    .service-section-two .icon {
+        padding-top: 5px;
+    }
+    .service-section-three .title h1 {
+        font-size: 45px ;
+        line-height: 60px;
+    }
+    .service-section-three{
+        padding: 50px 0px;
+    }
+    .service-section-three .image {
+        margin-top: 20px;
+    }
+    .service-section-three p {
+        line-height: 22px;
+        text-align: justify;
+        max-width: 100%;
+        font-size: 13px;
+    }
+    .service-section-three .benefit-items .title h6 {
+        font-size: 25px;
+    }
+    .service-section-three .benefit-items .item{
+        padding: 15px;
+        height: auto;
+    }
+    .service-section-three .benefit-items .item h6{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .service-section-three .benefit-items .item p{
+        font-size: 13px;
+        color: var(--light-color);
+    }
+    .service-section-three .benefit-items .item{
+        margin-bottom: 20px;
+    }
+    .service-section-three .title h6{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .service-cta .image img {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .service-cta .content h1 {
+        font-size: 45px ;
+        line-height: 60px;
+        text-align: center;
+    }
+    .service-cta .content p{
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-device-width:481px) and (max-device-width: 768px){
+    .service-hero-section .banner-content{
+        padding: 100px 20px;
+    }
+    .service-hero-section .banner-content h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .service-hero-section .banner-content h6{
+        font-size: 22px;
+    }
+    .service-hero-section .banner-content p{
+        max-width: 100%;
+        font-size: 18px;
+        width: 100%;
+        line-height: 25px;
+    }
+    .service-section-one .content h6{
+        font-size: 22px;
+    }
+    .service-section-one .content h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .service-section-one .content p{
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 15px;
+    }
+    .service-section-one .image img{
+        width: 100%;
+        padding: 30px;
+    }
+    .service-section-one {
+        padding: 50px 0px 0px 0px;
+    }
+    .service-section-two .item .item-content h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .service-section-two .item{
+        margin-bottom: 30px;
+    }
+    .service-section-two .item-content p{
+        font-size: 18px;
+        color: var(--light-color);
+        line-height: 25px;
+    }
+    .service-section-two .icon {
+        padding-top: 5px;
+    }
+    .service-section-three .title h1 {
+        font-size: 60px ;
+        line-height: 70px;
+    }
+    .service-section-three{
+        padding: 50px 0px;
+    }
+    .service-section-three .image {
+        margin-top: 20px;
+    }
+    .service-section-three p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+    .service-section-three .benefit-items .title h6 {
+        font-size: 25px;
+    }
+    .service-section-three .benefit-items .item{
+        padding: 15px;
+        height: auto;
+    }
+    .service-section-three .benefit-items .item h6{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .service-section-three .benefit-items .item p{
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--light-color);
+    }
+    .service-section-three .benefit-items .item{
+        margin-bottom: 20px;
+    }
+    .service-section-three .title h6{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .service-cta .image img {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .service-cta .content h1 {
+        font-size: 60px ;
+        line-height: 70px;
+        text-align: center;
+    }
+    .service-cta .content p{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-device-width:769px) and (max-device-width: 1024px){
+    .service-hero-section .banner-content{
+        padding: 100px 20px;
+    }
+    .service-hero-section .banner-content h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .service-hero-section .banner-content h6{
+        font-size: 25px;
+    }
+    .service-hero-section .banner-content p{
+        max-width: 100%;
+        font-size: 20px;
+        width: 100%;
+        line-height: 28px;
+    }
+    .service-section-one .content h6{
+        font-size: 25px;
+    }
+    .service-section-one .content h1{
+        font-size: 70px;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+    .service-section-one .content p{
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+    .service-section-one .image img{
+        width: 100%;
+        padding: 30px;
+    }
+    .service-section-one {
+        padding: 50px 0px 0px 0px;
+    }
+    .service-section-two .item .item-content h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .service-section-two {
+        padding-bottom: 100px;
+    }
+    .service-section-two .item{
+        margin-top: 50px;
+    }
+    .service-section-two .item-content p{
+        font-size: 20px;
+        color: var(--light-color);
+        line-height: 28px;
+    }
+    .service-section-two .icon {
+        padding-top: 5px;
+    }
+    .service-section-three .title h1 {
+        font-size: 70px ;
+        line-height: 80px;
+    }
+    .service-section-three{
+        padding: 50px 0px;
+    }
+    .service-section-three .image {
+        margin-top: 20px;
+    }
+    .service-section-three p {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .service-section-three .benefit-items .title h6 {
+        font-size: 28px;
+    }
+    .service-section-three .benefit-items .item{
+        padding: 15px;
+        height: auto;
+    }
+    .service-section-three .benefit-items .item h6{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .service-section-three .benefit-items .item p{
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--light-color);
+    }
+    .service-section-three .benefit-items .item{
+        margin-bottom: 40px;
+    }
+    .service-section-three .title h6{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .service-cta .image img {
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .service-cta .content h1 {
+        font-size: 70px ;
+        line-height: 80px;
+        text-align: center;
+    }
+    .service-cta .content p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .service-section-three .benefit-items .item{
+        padding: 20px;
+    }
+}
+
+.center-ser-btn{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.benefit-items .icon img{
+    filter: brightness(0) invert(1);
+    max-width: 80%;
 }

@@ -29,30 +29,19 @@
     font-size: 20px;
     color: #adadad;
 }
-.team-members .logo-icon{
+.team-members .linkedin-icon{
+    height: 50px;
+    width: 70px;
     background-color: #ffff;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: 300;
     padding: 10px;
     margin-top: 20px;
+    text-align: center;
 }
-.team-members .logo-icon img{
+.team-members .linkedin-icon .icon{
     text-align: center;
     margin: auto;
-    display: flex;
-    max-width: 100%;
-}
-.team-members .social-media .icon{
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.team-members .social-media{
-    display: flex;
-    margin-top: 10px;
+    color: #0077B5;
+    font-size: 30px;
 }

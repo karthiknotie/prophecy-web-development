@@ -1,47 +1,160 @@
-.privacy-policy-breadcrumb .breadcrumb-title{
+
+ .privacy-policy-breadcrumb .breadcrumb-title{
+    padding: 50px 0px;
+ }
+ .breadcrumb-title{
     margin: auto;
     width: 100%;
     text-align: center;
 }
-.privacy-policy-breadcrumb .breadcrumb-title p{
+.breadcrumb-title p{
     color: #fff;
+    text-align: center !important;
 }
-.privacy-policy-breadcrumb .breadcrumb-title{
+.breadcrumb-title{
     padding: 100px 0px;
 }
-.privacy-policy-breadcrumb .breadcrumb-title h1{
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(0,133,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.breadcrumb-title h1{
+    font-family: var(--graphik-font);
+    font-weight: 600;
     position: relative;
-    color: #fff;
+    color: #81c2ff;
     font-size: 100px;
+    z-index: 99;
 }
-.privacy-policy-breadcrumb .breadcrumb-title-outline h1 {
+.breadcrumb-title-outline h1 {
     -webkit-text-stroke: 1px #ffffff33; 
     color: transparent; 
     background-color: transparent;
-    font-size: 130px;
+    font-size: 150px ;
     position: absolute;
-    top: 20%;
+    top: 15% ;
+    right: 50%;
+    transform: translateX(50%);
     width: 100%;
     text-align: center;
 }
+.privacy-policy-breadcrumb p{
+    max-width: 70%;
+    margin: auto;
+}
+.privacy-policy-section{
+    margin-bottom: 100px;
+}
+
 .privacy-policy-section .policy-content h6{
     margin-top: 50px;
     color: #fff;
     font-size: 25px;
 }
 .privacy-policy-section .policy-content p{
-    color: #fff;
+    color: var(--light-color);
     font-size: 18px;
 }
 .privacy-policy-section .policy-content ul li{
-    color: #fff;
+    color: var(--light-color);
     font-size: 18px;
 }
 .privacy-policy-section{
-    padding-bottom: 150px;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (min-device-width:320px) and (max-device-width: 480px){
+    .privacy-policy-breadcrumb p{
+        max-width: 100%;
+    }
+    .breadcrumb-title{
+        padding: 50px 0px;
+    }
+    .breadcrumb-title h1{
+        font-size: 40px;
+    }
+    .breadcrumb-title p{
+        font-size: 13px;
+    }
+    .breadcrumb-title-outline h1{
+        display: none;
+    }
+    .privacy-policy-section .policy-content h6{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 20px;
+    }
+    .privacy-policy-section .policy-content p{
+        color: var(--light-color);
+        font-size: 15px;
+    }
+    .privacy-policy-section .policy-content ul li{
+        color: var(--light-color);
+        font-size: 15px;
+    }
+    .privacy-policy-section{
+        padding-bottom: 150px;
+    }
+}
+
+
+@media screen and (min-device-width:481px) and (max-device-width: 768px){
+    .privacy-policy-breadcrumb p{
+        max-width: 100%;
+    }
+    .breadcrumb-title{
+        padding: 50px 0px;
+    }
+    .breadcrumb-title h1{
+        font-size: 50px;
+    }
+    .breadcrumb-title p{
+        font-size: 15px;
+    }
+    .breadcrumb-title-outline h1{
+        display: none;
+    }
+    .privacy-policy-section .policy-content h6{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 25px;
+    }
+    .privacy-policy-section .policy-content p{
+        font-size: 18px;
+    }
+    .privacy-policy-section .policy-content ul li{
+        font-size: 18px;
+    }
+    .privacy-policy-section{
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (min-device-width:769px) and (max-device-width: 1024px){
+    .privacy-policy-breadcrumb p{
+        max-width: 100%;
+    }
+    .breadcrumb-title{
+        padding: 80px 0px;
+    }
+    .breadcrumb-title h1{
+        font-size: 70px;
+    }
+    .breadcrumb-title p{
+        font-size: 18px;
+    }
+    .breadcrumb-title-outline h1{
+        display: none;
+    }
+    .privacy-policy-section .policy-content h6{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 30px;
+    }
+    .privacy-policy-section .policy-content p{
+        font-size: 20px;
+    }
+    .privacy-policy-section .policy-content ul li{
+        font-size: 20px;
+    }
+    .privacy-policy-section{
+        padding-bottom: 150px;
+    }
 }
