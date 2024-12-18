@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(cors({
-    origin: "http://prophecytechs.com",
+    origin: "http://localhost:3000",
     credentials: true,
 }));
 
@@ -68,7 +68,7 @@ async function main() {
 
         // Start server
         app.listen(port, () => {
-            console.log(`Server running at http://prophecytechs.com:${port}`);
+            console.log(`Server running at http://localhost:3000:${port}`);
         });
     } catch (err) {
         console.error("Error connecting to MongoDB:", err);
