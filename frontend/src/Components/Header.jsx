@@ -51,7 +51,7 @@ const Header = () => {
 
         const blogResults = blogsData?.map((blog) => ({
             id: blog._id,
-            image: blog.coverImg ? `http://localhost:5000/${blog.coverImg}` : '/placeholder.jpg',
+            image: blog.coverImg ? `http://prophecytechs.com/${blog.coverImg}` : '/placeholder.jpg',
             title: blog.title,
             type: 'Blog',
         })) || [];
