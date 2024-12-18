@@ -22,7 +22,7 @@ const SingleBlog = () => {
           <div className="row">
             <div className="blog-large">
               <div className="blog-image" data-aos="zoom-in" data-aos-duration="1000">
-                <img src={`http://prophecytechs.com/${blog.coverImg}`} alt="" />
+                <img src={`http://localhost:5000/${blog.coverImg}`} alt="" />
                 <div className="date" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                   <h6>{formatDate(blog.createdAt)}</h6>
                 </div>
