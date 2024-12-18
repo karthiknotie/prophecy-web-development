@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const enquiryApi = createApi({
   reducerPath: 'enquiryApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api' }), // Update the base URL if necessary
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://prophecytechs.com/api' }), // Update the base URL if necessary
   tagTypes: ['Enquiries'], // Tag to manage enquiry data
   endpoints: (builder) => ({
     // Fetch all enquiries
