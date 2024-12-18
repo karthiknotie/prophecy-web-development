@@ -61,7 +61,7 @@ const Blog = () => {
                         <div className="blog-large">
                             <a href={`/blogs/${latestBlog._id}`}>
                                 <div className="blog-image">
-                                    <img src={`http://localhost:3000/${latestBlog.coverImg || NewBlogImage}`} alt={latestBlog.title} />
+                                    <img src={`http://localhost:5000/${latestBlog.coverImg || NewBlogImage}`} alt={latestBlog.title} />
                                     <div className="date">
                                         <h6>{formatDate(latestBlog.createdAt)}</h6>
                                     </div>
