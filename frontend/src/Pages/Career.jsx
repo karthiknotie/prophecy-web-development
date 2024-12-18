@@ -111,7 +111,7 @@ const Career = () => {
         formDataToSend.append("jobTitle", selectedJob.jobTitle); // Add the job title here
 
         axios
-            .post("http://prophecytechs.com/api/apply", formDataToSend, {
+            .post("http://localhost:5000/api/apply", formDataToSend, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
