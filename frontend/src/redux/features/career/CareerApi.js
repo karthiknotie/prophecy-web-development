@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const careerApi = createApi({
   reducerPath: 'careerApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api' }), // Ensure the API URL is correct
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://prophecytechs.com/api' }), // Ensure the API URL is correct
   tagTypes: ['Jobs', 'Applications'], // Tag to handle job and application data
   endpoints: (builder) => ({
     // Fetch jobs with optional search and category filters
